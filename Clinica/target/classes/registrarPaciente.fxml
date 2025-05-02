@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.co.uniquindio.clinica.controladores.RegistrarPacienteControlador">
+   <children>
+      <GridPane prefHeight="407.0" prefWidth="618.0" style="-fx-background-color: #EAF6FB;">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.6666259765625" minWidth="10.0" prefWidth="118.33334350585938" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.6666259765625" minWidth="10.0" prefWidth="154.33332316080725" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="538.0000305175781" minWidth="10.0" prefWidth="210.33333333333326" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="538.0000305175781" minWidth="10.0" prefWidth="160.66668701171875" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="53.0" prefWidth="150.0" style="-fx-text-fill: #154360;" text="Nombre:" GridPane.columnIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label prefHeight="53.0" prefWidth="150.0" style="-fx-text-fill: #154360;" text="Cédula:" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label prefHeight="53.0" prefWidth="150.0" style="-fx-text-fill: #154360;" text="Teléfono:" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label prefHeight="53.0" prefWidth="150.0" style="-fx-text-fill: #154360;" text="Correo:" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label prefHeight="53.0" prefWidth="150.0" style="-fx-text-fill: #154360;" text="Suscripción:" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_cedula" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="tf_telefono" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="tf_correo" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <ComboBox fx:id="cb_suscripcion" prefHeight="25.0" prefWidth="206.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="tf_nombre" prefHeight="25.0" prefWidth="301.0" GridPane.columnIndex="2" GridPane.hgrow="NEVER" />
+            <Button mnemonicParsing="false" onAction="#onRegistrar" prefHeight="25.0" prefWidth="219.0" style="-fx-background-color: #A8D5BA; -fx-cursor: hand;" text="Registar" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</VBox>
